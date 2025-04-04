@@ -1,0 +1,139 @@
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400');
+:root{
+    --ui-font-family-system: system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
+    --ui-font-family-primary: var(--ui-font-family-system);
+    --base-color: #FF550A;
+    --ui-btn-background: #868d95;
+    --ui-btn-background-hover: #5b6573;
+    --ui-btn-background-active: #3b506e;
+    --base-link-color: rgb(25, 28, 31);
+    --base-color-blackout: #FF550A; 
+    /* --base-link-color: #FF550A; */
+    --ui-alert-border-radius:4px;
+}
+.ui-ctl-tag-warning {
+    --ui-btn-background: #868d95;
+    --ui-btn-background-hover: #5b6573;
+    --ui-btn-background-active: #3b506e;
+}
+.ui-ctl-tag-success {
+    --ui-btn-background: #bbed21;
+    --ui-btn-background-hover: #d2f95f;
+    --ui-btn-background-active: #b2e232;
+    --ui-btn-border-color: #bbed21;
+    --ui-btn-border-color-hover: #d2f95f;
+    --ui-btn-border-color-active: #b2e232;
+    --ui-btn-opacity-after: .2;
+    --ui-btn-colors-after-bg: #535c69;
+    --ui-btn-colors-before-bg: #535c69;
+    --ui-btn-color: #535c69;
+    --ui-btn-color-hover: #535c69;
+    --ui-btn-color-active: #535c69;
+}
+.ui-ctl-tag-danger {
+    --ui-btn-background: #f1361a;
+    --ui-btn-background-hover: #cc1c00;
+    --ui-btn-background-active: #d24430;
+    --ui-btn-border-color: #f1361a;
+    --ui-btn-border-color-hover: #cc1c00;
+    --ui-btn-border-color-active: #d24430;
+    --ui-btn-opacity-after: .3;
+    --ui-btn-color: #fff;
+    --ui-btn-color-hover: #fff;
+    --ui-btn-color-active: #fff;
+}
+.ui-btn-icon-merger.ui-btn,.ui-btn-icon-merger.ui-btn-split,.ui-btn-icon-merger.ui-btn-danger,.ui-btn-icon-merger.ui-btn-primary,.ui-btn-icon-merger.ui-btn-default,.ui-btn-icon-merger.ui-btn-danger-dark,.ui-btn-icon-merger.ui-btn-success-dark,.ui-btn-icon-merger.ui-btn-primary-dark,.bitrix24-light-theme .ui-btn-icon-merger.ui-btn-themes {
+    --ui-btn-icon: url("https://micros.uz/it/solutions_our/multicheck.app/v2/assets/merge.png");
+}
+
+
+body{
+    margin:2px;
+}
+h4{
+    height: 100%;
+    margin: auto 0;
+    color: #80868e !important;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+input{
+    z-index: 1;
+    display: block;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0 11px;
+    width: 100%;
+    outline: 0;
+    height: 39px;
+    border: 1px solid rgb(198,205,211);
+    border-radius: 2px;
+    background-color:#fff;
+    color: #535c69;
+    vertical-align: middle;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font: 400 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
+    transition: border .3s ease,background-color .3s ease,color .3s ease,padding .3s ease;
+    flex: 1;
+    appearance: none;
+}
+.module-entity-field{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 5px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 6px;
+}
+.module-entity-messg .ui-alert{
+    padding: 11px 10px;
+    margin-bottom: 0;
+}
+
+#app-settings{
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    z-index: 1;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+  }
+#app-settings.ui-icon>i{
+    background-color: var(--base-color);
+}
+.ui-ctl-tag.ui-ctl-tag-success {
+    background-color: var(--ui-btn-background);
+}
+.ui-ctl-tag.ui-ctl-tag-success:hover {
+    background-color: var(--ui-btn-background-hover);
+}
+.ui-ctl-tag.ui-ctl-tag-danger {
+    background-color: var(--ui-btn-background);
+}
+.ui-ctl-tag.ui-ctl-tag-danger:hover {
+    background-color: var(--ui-btn-background-hover);
+}
+.ui-ctl-tag.ui-ctl-tag-warning {
+    background-color: var(--ui-btn-background);
+}
+.ui-ctl-tag.ui-ctl-tag-warning:hover {
+    background-color: var(--ui-btn-background-hover);
+}
+/* .ui-btn.ui-btn-icon-remove::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    background: black;
+} */
